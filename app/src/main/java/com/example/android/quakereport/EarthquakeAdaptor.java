@@ -75,8 +75,8 @@ import java.text.DecimalFormat;
             //split earthquake JSON location into two strings, or if has only one string, then replace first string with fixed label
 
             if(currentEarthquake.getLocation().contains(",")) {
-                String arrayLocation[] = currentEarthquake.getLocation().split(",");
-                String firstLocation = arrayLocation[0];
+                String arrayLocation[] = currentEarthquake.getLocation().split("of ");
+                String firstLocation = arrayLocation[0] + "of";
                 String secondLocation = arrayLocation[1];
 
                 // Find the TextView with view ID firstlocation
