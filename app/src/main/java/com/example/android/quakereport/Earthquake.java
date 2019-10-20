@@ -8,18 +8,17 @@ package com.example.android.quakereport;
  */
 public class Earthquake {
 
-    /** Time of the earthquake */
-    private long mTimeInMilliseconds;
-
     /** Magnitude of the earthquake */
     private double mMagnitude;
 
     /** Location of the earthquake */
     private String mLocation;
 
+    /** Time of the earthquake */
+    private long mTimeInMilliseconds;
+
     /** Website URL of the earthquake */
     private String mUrl;
-
 
     /**
      * Constructs a new {@link Earthquake} object.
@@ -65,4 +64,3 @@ public class Earthquake {
         return mUrl;
     }
 }
-
